@@ -174,6 +174,7 @@ def søk_i_indeks_med_mengde(indeks, mengde_av_søkeord):
 
     Examples
     --------
+    >>> indeks = last_inn_indeks()
     >>> søk_i_indeks_med_streng(indeks, {"sherlock", "holmes", "scarlet")
     {'Chronicles_of_Martin_Hewitt.bok', 'The_Hound_of_the_Baskervilles.bok'}
     >>> søk_i_indeks_med_streng(indeks, {"Dette", "er", "ikke", "i", "indeksen"})
@@ -261,6 +262,7 @@ def søk_i_indeks_med_streng(indeks, søkestreng):
 
     Examples
     --------
+    >>> indeks = last_inn_indeks()
     >>> søk_i_indeks_med_streng(indeks, "Sherlock Holmes, scarlet")
     {'Chronicles_of_Martin_Hewitt.bok', 'The_Hound_of_the_Baskervilles.bok'}
     >>> søk_i_indeks_med_streng(indeks, "Dette er ikke i indeksen")
