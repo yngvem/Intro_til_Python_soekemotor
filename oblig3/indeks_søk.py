@@ -132,7 +132,7 @@ def finn_felles_ellement_i_flere_mengder(liste_av_mengder):
     felles_element = None  # Slett denne linja
     # Skriv kode her
         
-    return felles_ellement
+    return felles_element
 
 
 def søk_i_indeks_med_mengde(indeks, mengde_av_søkeord):
