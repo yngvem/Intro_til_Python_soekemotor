@@ -1,6 +1,47 @@
 from ferdig_indeks import last_in_indeks
 
 
+def fjern_spesialtegn(streng):
+    r"""
+    Fjern de følgende spesialtegnene fra input strengen:
+        ``[',', '.', '"', '\'', ':', ';', '(', ')', '-', '?', '!']``
+    
+    Arguments
+    ---------
+    streng : str
+        Input strengen som spesialtegn skal fjernes fra
+    
+    Returns
+    -------
+    ren_streng : str
+        Strengen etter at spesialtegn er fjernet.
+    
+    Notes
+    -----
+    Se forelesningen den 20. mars.
+
+    Vi kan bruke ``replace`` funksjonen for å bytte substrenger med
+    andre strenger. 
+
+    >>> streng = "abc123abc"
+    >>> streng.replace('a', 'e')
+    ebc123ebc
+
+    Examples
+    --------
+    >>> streng = "abc1, hei på deg. Hva heter du?"
+    >>> fjern_spesialtegn(streng)
+    "abc1 hei på deg Hva heter du"
+
+    >>> streng = "  Hei på deg!!!\n"
+    >>> fjern_spesialtegn(streng)
+    "Hei på deg"
+    """
+    # Skriv kode her
+
+    return streng
+
+
 def finn_unike_ord_i_streng(streng):
     """
     Lag en mengde med alle ordene som dukker opp i strengen.
@@ -44,46 +85,6 @@ def finn_unike_ord_i_streng(streng):
     # Skriv kode her
 
     return unike_ord
-
-def fjern_spesialtegn(streng):
-    r"""
-    Fjern de følgende spesialtegnene fra input strengen:
-        ``[',', '.', '"', '\'', ':', ';', '(', ')', '-', '?', '!']``
-    
-    Arguments
-    ---------
-    streng : str
-        Input strengen som spesialtegn skal fjernes fra
-    
-    Returns
-    -------
-    ren_streng : str
-        Strengen etter at spesialtegn er fjernet.
-    
-    Notes
-    -----
-    Se forelesningen den 20. mars.
-
-    Vi kan bruke ``replace`` funksjonen for å bytte substrenger med
-    andre strenger. 
-
-    >>> streng = "abc123abc"
-    >>> streng.replace('a', 'e')
-    ebc123ebc
-
-    Examples
-    --------
-    >>> streng = "abc1, hei på deg. Hva heter du?"
-    >>> fjern_spesialtegn(streng)
-    "abc1 hei på deg Hva heter du"
-
-    >>> streng = "  Hei på deg!!!\n"
-    >>> fjern_spesialtegn(streng)
-    "Hei på deg"
-    """
-    # Skriv kode her
-
-    return streng
 
 
 def finn_felles_ellement_i_flere_mengder(liste_av_mengder):
@@ -258,7 +259,8 @@ def søk_i_indeks_med_streng(indeks, søkestreng):
 
     Notes
     -----
-    Husk ``søk_i_indeks_med_mengde`` funksjonen din.
+    Husk ``søk_i_indeks_med_mengde`` og ``klargjør_søkestreng`` funksjonene
+    dine.
 
     Examples
     --------
