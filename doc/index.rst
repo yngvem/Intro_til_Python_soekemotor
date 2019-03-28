@@ -20,6 +20,7 @@ alle disse tre ordene.
 I andre del av oppgaven skal dere lage en slik søkeindeks fra en mappe med
 mange bøker i.
 
+
 Hva trenger dere for denne oppgaven
 -----------------------------------
 I mappen "bøker" ligger en rekke bøker som tekstfiler. Disse er hentet fra 
@@ -66,9 +67,8 @@ ord (f.eks. ``"sherlock"``). Hver verdi er filnavnet til alle bøkene som
 innehodler det ordet (f.eks. 
 ``{'Chronicles_of_Martin_Hewitt.txt', 'The_Hound_of_the_Baskervilles.txt', 'In_the_Fog.txt'}``
 ).
+             
 
-                      
-    
 Å slå opp i en søkeindeks
 -------------------------
 Når vi slår opp i en søkeindeks bruker vi en søkestreng. Eksempel på dette
