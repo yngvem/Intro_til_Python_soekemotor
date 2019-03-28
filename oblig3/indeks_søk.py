@@ -1,4 +1,4 @@
-from ferdig_indeks import last_in_indeks
+from ferdig_indeks import last_in_indeks  # Her laster vi inn en ferdig søkeindeks
 
 
 def fjern_spesialtegn(streng):
@@ -167,6 +167,14 @@ def søk_i_indeks_med_mengde(indeks, mengde_av_søkeord):
     -----
     Husk ``finn_felles_ellement_i_flere_mengder`` funksjonen din.
 
+    Vi kan teste om et element er en nøkkel i en dictionary med ``in`` nøkkelordet
+
+    >>> d = {'a': 1, 'b': 2}
+    >>> 'a' in d
+    True
+    >>> 1 in d
+    False
+
     Vi kan lage en tom mengde med ``set`` funksjonen.
 
     >>> tom_mengde = set()
@@ -214,11 +222,11 @@ def klargjør_søkestreng(søkestreng):
     Examples
     --------
     >>> streng = "abc1, hei på deg. Hva heter du?"
-    >>> fjern_spesialtegn(streng)
+    >>> klargjør_søkestreng(streng)
     "abc1 hei på deg Hva heter du"
 
     >>> streng = "  Hei på deg!!!\n"
-    >>> fjern_spesialtegn(streng)
+    >>> klargjør_søkestreng(streng)
     "Hei på deg"
     """
     klargjort_streng = None  # Slett denne linja
@@ -278,6 +286,9 @@ def søk_i_indeks_med_streng(indeks, søkestreng):
 
 if __name__ == "__main__":
     søkestreng = "Sherlock Holmes, scarlet"
-    indeks = last_in_indeks()
+    indeks = last_in_indeks()  # Jeg (Yngve) har allerede lagd en indeks dere kan søke i
+                               # Den henter vi ut her.
 
     print(søk_i_indeks_med_streng(indeks, søkestreng))
+    # Denne skal printe
+    #  {'Chronicles_of_Martin_Hewitt.bok', 'The_Hound_of_the_Baskervilles.bok'}
