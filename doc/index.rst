@@ -5,11 +5,27 @@
 
 Lag din egen søkemotor
 ======================
-I denne oppgaven skal du lage din helt egne søkemotor. I mappen "bøker" ligger
-en rekke bøker som tekstfiler. Disse er hentet fra `Project Gutenberg`_.
-Din jobb er å lage et verktøy som lar brukeren skrive inn en søkestreng.
-Programmet skal så printe filnavnene til bøkene som inneholder alle ordene
-i søkestrengen. 
+I denne oppgaven skal du lage din helt egne søkemotor for å søke i bøker.
+Søkemotoren skal være en Python funksjon som tar to input, en søkeindeks,
+og en søkestreng. Hvordan søkeindeksen er bygd opp står beskrevet senere.
+Det denne søkemotorfunksjonen (``søk_i_indeks_med_streng``) skal gjøre er
+å finne de indekserte bøkene som inneholder alle ordene i søkestrengen.
+Nedenfor er et eksempel, hvor vi søker etter strengen 
+``Sherlock holmes, scarlet``. Ut får vi mengden med bøker som inneholder
+alle disse tre ordene.
+
+>>> søk_i_indeks_med_streng(søkeindeks, "Sherlock holmes, scarlet")
+{'Chronicles_of_Martin_Hewitt.bok', 'The_Hound_of_the_Baskervilles.bok'}
+
+I andre del av oppgaven skal dere lage en slik søkeindeks fra en mappe med
+mange bøker i.
+
+Hva trenger dere for denne oppgaven
+-----------------------------------
+I mappen "bøker" ligger en rekke bøker som tekstfiler. Disse er hentet fra 
+`Project Gutenberg`_. Din jobb er å lage et verktøy som lar brukeren skrive
+inn en søkestreng. Programmet skal så printe filnavnene til bøkene som 
+inneholder alle ordene i søkestrengen. 
 
 .. _Project Gutenberg: http://www.gutenberg.org/
 
@@ -23,6 +39,21 @@ I tillegg kommer vi til å bruke Path_ objektet i Python for å
 iterere over alle bokfilene.
 
 .. _Path: https://docs.python.org/3/library/pathlib.html#pathlib.Path
+
+
+Hvordan skal dere arbeide med denne oppgaven
+--------------------------------------------
+
+Last ned zip filen som inneholder oppgaven, i den filen ligger det
+en fire Python-filer: ``indeks_søk.py``, ``lag_indeks.py``,
+``__init__.py`` og ``ferdig_indeks.py``. Dere skal kun modifisere
+``indeks_søk.py`` og ``lag_indeks.py``. ``__init__.py`` er der for
+å gjøre jobben vår lettere, mens ``ferdig_indeks`` inneholder kode 
+som laster inn en ferdig søkeindeks slik at dere kan søke i en
+indeks før dere har lagd kode for å lage deres egen søkeindeks.
+I tillegg ligger en mappe med bokfiler i ``bøker`` mappa, disse
+bokfilene skal dere indeksere selv. 
+
 
 En søkeindeks
 -------------
