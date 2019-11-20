@@ -85,11 +85,6 @@ html_theme = "alabaster"
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
-#
-html_theme_options = {
-    # Disable showing the sidebar. Defaults to 'false'
-    'nosidebar': True,
-}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -116,7 +111,8 @@ html_theme_options = {
     'sticky_navigation': True,
     'navigation_depth': 4,
     'includehidden': True,
-    'titles_only': False
+    'titles_only': False,
+    'nosidebar': True,
 }
 
 
