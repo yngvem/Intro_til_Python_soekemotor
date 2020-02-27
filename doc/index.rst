@@ -1,11 +1,6 @@
-.. oblig3 documentation master file, created by
-   sphinx-quickstart on Thu Mar 21 13:44:23 2019.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
 Lag din egen søkemotor
 ======================
-I denne oppgaven skal du lage din helt egne søkemotor for å søke i bøker.
+I disse to obligene skal du lage din helt egne søkemotor for å søke i bøker.
 Søkemotoren skal være en Python funksjon som tar to input, en søkeindeks,
 og en søkestreng. Hvordan søkeindeksen er bygd opp står beskrevet senere.
 Det denne søkemotorfunksjonen (``søk_i_indeks_med_streng``) skal gjøre er
@@ -126,14 +121,22 @@ I *Notes* delene har vi skrevet hint dere kan lese hvis dere står
 fast med noen oppgaver og i *Examples* delene har dere eksempel input
 og output for funksjonene.
 
-Oppgave 1: Søke i en ferdig indeks
-----------------------------------
+Oblig 2: Søke i en ferdig indeks
+--------------------------------
 
 .. automodule:: indeks_søk
     :members:
 
-Oppgave 2: Lage en søkeindeks
------------------------------
+Funksjonskalldiagram
+~~~~~~~~~~~~~~~~~~~~
+
+.. image:: funksjonskalldiagram.png
+Her ser dere et bilde som viser hvilke funksjoner som skal brukes i hver
+funksjon dere lager. Hvis en pil starter i funksjon *a* og ender i funksjon
+*b*, så skal funksjon *a* bruke funksjon *b*.
+
+Oblig 3: Lage en søkeindeks
+---------------------------
 
 .. automodule:: lag_indeks
     :members:

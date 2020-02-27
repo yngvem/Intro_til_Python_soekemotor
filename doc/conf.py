@@ -20,8 +20,8 @@ sys.path.append(r'C:\Program Files\MiKTeX 2.9\miktex\bin\x64')
 
 # -- Project information -----------------------------------------------------
 
-project = 'Oblig 3: Lag din egen søkemotor'
-copyright = '2019, Yngve Mardal Moe'
+project = 'Oblig 2&3: Lag din egen søkemotor'
+copyright = '2020, Yngve Mardal Moe'
 author = 'Yngve Mardal Moe'
 
 # The short X.Y version
@@ -79,8 +79,8 @@ autodoc_member_order = 'bysource'
 # a list of builtin themes.
 #
 # html_theme = 'guzzle'
-#html_theme = "sphinx_rtd_theme"
-html_theme = "alabaster"
+html_theme = "sphinx_rtd_theme"
+#html_theme = "alabaster"
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -105,7 +105,6 @@ html_theme_options = {
     'display_version': False,
     'prev_next_buttons_location': 'bottom',
     'style_external_links': False,
-    'style_nav_header_background': 'gray',
     # Toc options
     'collapse_navigation': False,
     'sticky_navigation': True,
