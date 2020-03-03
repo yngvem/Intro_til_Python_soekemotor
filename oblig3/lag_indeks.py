@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from pathlib import Path
 import indeks_søk    # Kanskje du skal bruke noen av funksjonene du lagde her?
 

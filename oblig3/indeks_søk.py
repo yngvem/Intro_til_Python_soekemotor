@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from ferdig_indeks import last_in_indeks  # Her laster vi inn en ferdig søkeindeks
 
 
