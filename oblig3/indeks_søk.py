@@ -19,8 +19,6 @@ def fjern_spesialtegn(streng):
     
     Notes
     -----
-    Se forelesningen den 20. mars.
-
     Vi kan bruke ``replace`` funksjonen for å bytte substrenger med
     andre strenger. 
 
@@ -66,8 +64,6 @@ def finn_unike_ord_i_streng(streng):
     
     Notes
     -----
-    Se forelesningvideoen for 13. mars og 19. mars.
-
     Vi kan splitte opp strenger med ``split`` funksjonen.
 
     >>> tekst = 'abc 123'
