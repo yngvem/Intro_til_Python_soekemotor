@@ -5,7 +5,9 @@ from ferdig_indeks import last_in_indeks  # Her laster vi inn en ferdig søkeind
 def fjern_spesialtegn(streng):
     r"""
     Fjern de følgende spesialtegnene fra input strengen:
-        ``[',', '.', '"', '\'', ':', ';', '(', ')', '-', '?', '!']``
+        ``[',', '.', '"', '\'', ':', ';', '(', ')', '-', '?', '!', '\n']``
+    
+    Mellomrom på slutten og starten av linjer skal også fjernes.
     
     Arguments
     ---------
@@ -50,7 +52,7 @@ def finn_unike_ord_i_streng(streng):
     på slutten og starten av linjer skal også fjernes.
     
     De følgende spesialtegn må og fjernes:
-    ``[',', '.', '"', '\'', ':', ';', '(', ')', '-', '?', '!']``
+    ``[',', '.', '"', '\'', ':', ';', '(', ')', '-', '?', '!', '\n']``
     
     Arguments
     ---------
@@ -181,9 +183,9 @@ def søk_i_indeks_med_mengde(indeks, mengde_av_søkeord):
     Examples
     --------
     >>> indeks = last_inn_indeks()
-    >>> søk_i_indeks_med_streng(indeks, {"sherlock", "holmes", "scarlet")
+    >>> søk_i_indeks_med_mengde(indeks, {"sherlock", "holmes", "scarlet")
     {'Chronicles_of_Martin_Hewitt.bok', 'The_Hound_of_the_Baskervilles.bok'}
-    >>> søk_i_indeks_med_streng(indeks, {"Dette", "er", "ikke", "i", "indeksen"})
+    >>> søk_i_indeks_med_mengde(indeks, {"Dette", "er", "ikke", "i", "indeksen"})
     {}
     """
     mulige_bøker = None  # Slett denne linja
