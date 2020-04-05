@@ -12,7 +12,7 @@ def finn_alle_unike_ord_i_liste_av_strenger(liste_av_strenger):
     på slutten og starten av strengene skal også fjernes.
     
     De følgende spesialtegn må og fjernes:
-    ``[',', '.', '"', '\'', ':', ';', '(', ')', '-', '?', '!']``
+    ``[',', '.', '"', '\'', ':', ';', '(', ')', '-', '?', '!', '\n']``
     
     Arguments
     ---------
@@ -65,7 +65,7 @@ def finn_unike_ord_i_bok(bokfil):
     på slutten og starten av linjer er fjernet.
     
     De følgende spesialtegnene skal og fjernes:
-    ``[',', '.', '"', '\'', ':', ';', '(', ')', '-', '?', '!']``
+    ``[',', '.', '"', '\'', ':', ';', '(', ')', '-', '?', '!', '\n']``
     
     Arguments
     ---------
@@ -212,7 +212,7 @@ def indekser_bøker(mappe):
     funksjonen
 
     >>> mappe = Path('bøker')
-    >>> for bokfil in mappe.glob('\*.bok'):
+    >>> for bokfil in mappe.glob('*.bok'):
     ...     print(bokfil)
     bøker\A_Journey_to_the_Centre_of_the_Earth.bok
     bøker\Benefactor.bok
