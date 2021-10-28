@@ -44,7 +44,7 @@ def fjern_spesialtegn(streng):
 
 
 def finn_unike_ord_i_streng(streng):
-    """
+    r"""
     Lag en mengde med alle ordene som dukker opp i strengen.
     
     Pass på at strengen kun inneholder små bokstaver (hvis store bokstaver
